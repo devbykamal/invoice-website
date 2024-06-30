@@ -425,3 +425,93 @@ body.dark .home .text {
     font-size: 8px;
     text-align: center;
 }
+
+.amount-section {
+    padding-left: 50px;
+}
+
+.table-section {
+
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+}
+
+th,
+td {
+    border: 1px solid black;
+
+
+
+}
+
+.top-header1 {
+    width: 50px;
+
+}
+
+.top-header2 {
+    width: 50px;
+    text-align: center;
+    color: green;
+    font-size: 25px;
+}
+
+.top-header3 {
+    width: 90px;
+}
+
+.top-header4 {
+    width: 150px;
+}
+
+.top-header5 {
+    width: 150px;
+}
+
+.top-header6 {
+    width: 120px;
+}
+
+.top-header7 {
+    width: 90px;
+}
+
+.top-header .xmarks {
+    color: red;
+}
+
+.select {
+    font-size: 10px;
+
+}
+
+#Quantity {
+    width: 120px;
+
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.amount {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.sub-ver {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}

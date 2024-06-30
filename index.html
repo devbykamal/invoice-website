@@ -40,26 +40,27 @@
                 <ul class="menu-links">
                     <li class="nav-link">
                         <a href="#">
-                            <i class='bx bx-home-alt icon'></i>
+                            <i class="fa-solid 
+fa-dashboard icon"></i>
                             <span class="text nav-text">Dashboard</span>
                         </a>
                     </li>
                     <li class="nav-link">
                         <a href="#">
-                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                            <i class="fa-solid fa-file-invoice icon"></i>
                             <span class="text nav-text">Invoice</span>
                         </a>
                     </li>
                     <li class="nav-link">
                         <a href="#">
-                            <i class='bx bx-bell icon'></i>
-                            <span class="text nav-text">Notifications</span>
+                            <i class="fas fa-book icon"></i>
+                            <span class="text nav-text">Customer ledger</span>
                         </a>
                     </li>
                     <li class="nav-link">
                         <a href="#">
-                            <i class='bx bx-pie-chart-alt icon'></i>
-                            <span class="text nav-text">Analytics</span>
+                            <i class="fa-solid fa-boxes-stacked icon"></i>
+                            <span class="text nav-text">check stock</span>
                         </a>
                     </li>
                 </ul>
@@ -94,7 +95,8 @@
         </div>
         <div class="top-navtype">
             <div class="home-icon">
-                <i class='bx bx-home-alt icon'></i>&nbsp;<span>Home</span>
+                <i class="fa-solid 
+                fa-file-invoice icon"></i>&nbsp;<span>Invoice</span>
                 <!-- <i class='bx bx-chevron-right'></i> -->
             </div>
             <div class="top-navtype-center">
@@ -133,10 +135,116 @@
 
             </div>
             <div class="date">
-                <input type="date" name="" id="">
+                <input type="datetime-local" id="birthdaytime" name="birthdaytime">
             </div>
+
+        </div>
+        <div class="table-section">
+            <table>
+                <tr>
+                    <th class="top-header1">#</th>
+                    <th class="top-header2"><i class="fa fa-plus-square" aria-hidden="true"></i></th>
+                    <th class="top-header3">items</th>
+                    <th class="top-header4">unstocked items</th>
+                    <th class="top-header5">Ouantity</th>
+                    <th class="top-header6">unit kg</th>
+                    <th class="top-header7">price</th>
+                    <th class="top-header7">Subtotal</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td class="xmarks">&#10008;</td>
+                    <td class="select">or select items</td>
+                    <td>
+                        <input type="text" placeholder="unstocked name">
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Quantity" maxlength="15" size="7" id="Quantity">
+                    </td>
+                    <td>
+                        <label for="simple-dropdown">select:</label>
+                        <select id="simple-dropdown" name="options">
+                            <option value="option1">kg</option>
+                            <option value="option2">pcs</option>
+                        </select>
+                    </td>
+                    <td>Rs
+                        <input type="text" id="pin" name="pin" maxlength="5" size="1" placeholder="price">
+                    </td>
+                    <td>Rs
+                        <input type="text" id="pin" name="pin" maxlength="5" size="1" placeholder=00>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="xmarks">&#10008;</td>
+                    <td class="select">or select items </td>
+                    <td>
+                        <input type="text" placeholder="unstocked name">
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Quantity" maxlength="15" size="7" id="Quantity">
+                    </td>
+                    <td><label for="simple-dropdown">select:</label>
+                        <select id="simple-dropdown" name="options">
+                            <option value="option1">kg</option>
+                            <option value="option2">pcs</option>
+                        </select>
+                    </td>
+                    <td>Rs
+                        <input type="text" id="pin" name="pin" maxlength="5" size="1" placeholder="price">
+                    </td>
+                    <td>Rs
+                        <input type="text" id="pin" name="pin" maxlength="5" size="1" placeholder="00">
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="xmarks">&#10008;</td>
+                    <td class="select">or select items </td>
+                    <td>
+                        <input type="text" placeholder="unstocked name">
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Quantity" maxlength="15" size="7" id="Quantity">
+                    </td>
+                    <td>
+                        <label for="simple-dropdown">select:</label>
+                        <select id="simple-dropdown" name="options">
+                            <option value="option1">kg</option>
+                            <option value="option2">pcs</option>
+                        </select>
+                    </td>
+                    <td>Rs
+                        <input type="text" id="pin" name="pin" maxlength="5" size="1" placeholder="price">
+                    </td>
+                    <td class="total-td">Rs
+                        <input type="text" id="pin" name="pin" maxlength="5" size="1" placeholder="00">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="amount">
+            <div class="sub-total">
+                sub total rs:<input type="text" id="pin" name="pin" maxlength="5" size="1" placeholder="price">
+            </div>
+            <div class="discount">
+                discount rs:<input type="text" id="" name="pin" maxlength="5" size="1" placeholder="price">
+            </div>
+            <div class="discount">
+                total rs:<input type="text" id="" name="pin" maxlength="5" size="1" placeholder="price">
+            </div>
+
         </div>
 
+        <div class="amount-section">
+            <p>Amount in word....</p>
+            <input type="checkbox" name="" id="">
+        </div>
+        <div class="sub-ver">
+            <button class="submit">submit</button><br>
+            <button type="button">verify</button>
+        </div>
     </section>
     <script>
         const body = document.querySelector('body'),
